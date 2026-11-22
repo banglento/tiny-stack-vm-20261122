@@ -1,6 +1,4 @@
 // tiny-stack-vm-01-run-20261122: a complete, exact interpreter for make.fun's tiny stack ISA.
-// All the rules the plain baseline skips are honoured: Math.imul wrapping, unsigned DIVU/MODU/LTU,
-// signed remainders, 5-bit shift counts, PUSH8 sign extension, per-trap exit codes 2..11.
 import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
